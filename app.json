@@ -1,15 +1,23 @@
 {
   "expo": {
     "name": "pruebaTecnica",
-    "slug": "pruebaTecnica",
+    "slug": "pruebtecnica",
     "version": "1.0.0",
+    "platforms": [
+      "android",
+      "ios"
+    ],
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "pruebatecnica",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.georgeaqa.pruebtecnica",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -19,7 +27,8 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.georgeaqa.pruebtecnica"
     },
     "web": {
       "output": "static",
@@ -43,6 +52,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "08942e2d-4da2-4adc-b68f-0e064a7e5974"
+      }
+    },
+    "owner": "georgeaqa"
   }
 }
